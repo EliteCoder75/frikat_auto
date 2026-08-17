@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="page-index">
@@ -36,7 +36,6 @@
                         <li><a href="vehicules-neufs.html" class="nav-link">Véhicules Neufs</a></li>
                         <li><a href="vehicules-occasions.html" class="nav-link">Véhicules d'Occasion</a></li>
                         <li><a href="services.html" class="nav-link">Services</a></li>
-                        <li><a href="about.html" class="nav-link">À Propos</a></li>
                         <li><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
 
@@ -59,12 +58,8 @@
 
                     <div class="hero-premium-center">
 
-                        <img src="images/logo.webp" alt="FRIKAT AUTO" class="hero-logo-anim">
-
-                        <p class="hero-arabic-text">تصدير السيارات نحو الجزائر</p>
-
-                        <div class="hero-trust-badge">
-                            <i class="fas fa-shield-alt"></i> Expert en export automobile
+                        <div class="hero-logo-animated">
+                            <img src="images/logo.webp" alt="FRIKAT AUTO Logo">
                         </div>
 
                         <div class="hero-title-block">
@@ -76,34 +71,12 @@
                             <p class="hero-subtext">Neuf ou occasion — livraison en Algérie</p>
                         </div>
 
-                        <div class="hero-services-pills">
-                            <span class="hero-pill"><i class="fas fa-tag"></i> Achat</span>
-                            <span class="hero-pill"><i class="fas fa-handshake"></i> Vente</span>
-                            <span class="hero-pill"><i class="fas fa-box-open"></i> Dépôt-Vente</span>
-                            <span class="hero-pill"><i class="fas fa-shipping-fast"></i> Export</span>
-                        </div>
-
-                        <div class="hero-cta-block">
-                            <div class="hero-cta-cards-row">
-                                <a href="vehicules-neufs.html" class="hero-cta-card">
-                                    <div class="hero-cta-card-icon"><i class="fas fa-star"></i></div>
-                                    <div class="hero-cta-card-info">
-                                        <span class="hero-cta-card-title">Véhicules Neufs</span>
-                                        <span class="hero-cta-card-sub">Toutes marques · Garantie</span>
-                                    </div>
-                                    <i class="fas fa-chevron-right hero-cta-card-arrow"></i>
-                                </a>
-                                <a href="vehicules-occasions.html" class="hero-cta-card hero-cta-card--hot">
-                                    <div class="hero-cta-card-icon"><i class="fas fa-car"></i></div>
-                                    <div class="hero-cta-card-info">
-                                        <span class="hero-cta-card-title">Véhicules d'Occasion</span>
-                                        <span class="hero-cta-card-sub">Moins de 3 ans · TN · DZ · MA</span>
-                                    </div>
-                                    <i class="fas fa-chevron-right hero-cta-card-arrow"></i>
-                                </a>
-                            </div>
-                            <a href="https://wa.me/33774480625" class="btn-cta-whatsapp" target="_blank" rel="noopener">
-                                <i class="fab fa-whatsapp"></i> Contactez-nous sur WhatsApp
+                        <div class="hero-cta-block" style="flex-direction:row; justify-content:center; flex-wrap:wrap;">
+                            <a href="vehicules-occasions.html" class="btn btn-primary" style="width:auto;">
+                                Voir nos véhicules <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="https://wa.me/33774480625" class="btn btn-outline-white" style="width:auto;" target="_blank" rel="noopener">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
                             </a>
                         </div>
 
@@ -122,9 +95,9 @@
             <a href="vehicules-neufs.html" class="vcat-panel" style="background-image: url(images/neuf.webp);">
                 <div class="vcat-overlay"></div>
                 <div class="vcat-content">
-                    <span class="vcat-eyebrow">Neuf · Export · Garantie</span>
+                    <span class="vcat-eyebrow">Neuf · Export</span>
                     <h2 class="vcat-title">Véhicules<br>Neufs</h2>
-                    <p class="vcat-desc">Toutes marques, livrés directement depuis la France vers l'Algérie.</p>
+                    <p class="vcat-desc">Toutes marques, livrés depuis la France.</p>
                     <span class="vcat-btn">Découvrir <i class="fas fa-arrow-right"></i></span>
                 </div>
             </a>
@@ -133,9 +106,9 @@
             <a href="vehicules-occasions.html" class="vcat-panel" style="background-image: url(images/occasion.webp);">
                 <div class="vcat-overlay"></div>
                 <div class="vcat-content">
-                    <span class="vcat-eyebrow">Occasion · Contrôlé · Export</span>
+                    <span class="vcat-eyebrow">Occasion · Contrôlé</span>
                     <h2 class="vcat-title">Véhicules<br>d'Occasion</h2>
-                    <p class="vcat-desc">Sélection rigoureuse, moins de 3 ans pour l'export — transparence et qualité garanties.</p>
+                    <p class="vcat-desc">Sélection rigoureuse, moins de 3 ans.</p>
                     <span class="vcat-btn">Découvrir <i class="fas fa-arrow-right"></i></span>
                 </div>
             </a>
@@ -169,61 +142,64 @@
 
     <!-- Nos Services -->
     <section class="svc-section">
-        <div class="svc-header">
-            <span class="svc-eyebrow">Ce que nous faisons</span>
-            <h2 class="svc-title">Nos Services</h2>
-        </div>
-        <div class="svc-list">
+        <div class="svc-split">
 
-            <a href="services.html" class="svc-item">
-                <div class="svc-num">01</div>
-                <div class="svc-icon"><i class="fas fa-shopping-cart"></i></div>
-                <div class="svc-body">
-                    <span class="svc-name">Achat</span>
-                    <span class="svc-desc">Estimation gratuite, rachat au meilleur prix.</span>
+            <div class="svc-content">
+                <div class="svc-header" style="align-items:flex-start; padding:0 0 1rem;">
+                    <span class="svc-eyebrow">Ce que nous faisons</span>
+                    <h2 class="svc-title" style="margin-bottom:0.5rem;">Nos Services</h2>
                 </div>
-                <i class="fas fa-arrow-right svc-arrow"></i>
-            </a>
+                <div class="svc-list" style="max-width:none; margin:0; padding:0;">
 
-            <a href="services.html" class="svc-item">
-                <div class="svc-num">02</div>
-                <div class="svc-icon"><i class="fas fa-car"></i></div>
-                <div class="svc-body">
-                    <span class="svc-name">Vente</span>
-                    <span class="svc-desc">Neufs & occasions, France ou export.</span>
-                </div>
-                <i class="fas fa-arrow-right svc-arrow"></i>
-            </a>
+                    <a href="services.html" class="svc-item">
+                        <div class="svc-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="svc-body">
+                            <span class="svc-name">Achat</span>
+                            <span class="svc-desc">Estimation gratuite, rachat au meilleur prix.</span>
+                        </div>
+                        <i class="fas fa-arrow-right svc-arrow"></i>
+                    </a>
 
-            <a href="services.html" class="svc-item">
-                <div class="svc-num">03</div>
-                <div class="svc-icon"><i class="fas fa-globe-africa"></i></div>
-                <div class="svc-body">
-                    <span class="svc-name">Export Algérie</span>
-                    <span class="svc-desc">Véhicules -3 ans, formalités incluses.</span>
-                </div>
-                <i class="fas fa-arrow-right svc-arrow"></i>
-            </a>
+                    <a href="services.html" class="svc-item">
+                        <div class="svc-icon"><i class="fas fa-car"></i></div>
+                        <div class="svc-body">
+                            <span class="svc-name">Vente</span>
+                            <span class="svc-desc">Neufs & occasions, France ou export.</span>
+                        </div>
+                        <i class="fas fa-arrow-right svc-arrow"></i>
+                    </a>
 
-            <a href="services.html" class="svc-item">
-                <div class="svc-num">04</div>
-                <div class="svc-icon"><i class="fas fa-file-alt"></i></div>
-                <div class="svc-body">
-                    <span class="svc-name">Accompagnement Administratif</span>
-                    <span class="svc-desc">Douanes, certificats et formalités pris en charge.</span>
-                </div>
-                <i class="fas fa-arrow-right svc-arrow"></i>
-            </a>
+                    <a href="services.html" class="svc-item">
+                        <div class="svc-icon"><i class="fas fa-globe-africa"></i></div>
+                        <div class="svc-body">
+                            <span class="svc-name">Export Algérie</span>
+                            <span class="svc-desc">Véhicules -3 ans, formalités incluses.</span>
+                        </div>
+                        <i class="fas fa-arrow-right svc-arrow"></i>
+                    </a>
 
-            <a href="services.html" class="svc-item">
-                <div class="svc-num">05</div>
-                <div class="svc-icon"><i class="fas fa-ship"></i></div>
-                <div class="svc-body">
-                    <span class="svc-name">Transit</span>
-                    <span class="svc-desc">Transport international de la France à destination.</span>
+                    <a href="services.html" class="svc-item">
+                        <div class="svc-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="svc-body">
+                            <span class="svc-name">Accompagnement Administratif</span>
+                            <span class="svc-desc">Douanes, certificats et formalités pris en charge.</span>
+                        </div>
+                        <i class="fas fa-arrow-right svc-arrow"></i>
+                    </a>
+
+                    <a href="services.html" class="svc-item">
+                        <div class="svc-icon"><i class="fas fa-ship"></i></div>
+                        <div class="svc-body">
+                            <span class="svc-name">Transit</span>
+                            <span class="svc-desc">Transport international de la France à destination.</span>
+                        </div>
+                        <i class="fas fa-arrow-right svc-arrow"></i>
+                    </a>
+
                 </div>
-                <i class="fas fa-arrow-right svc-arrow"></i>
-            </a>
+            </div>
+
+            <div class="svc-image" style="background-image: url('images/rafale.webp');"></div>
 
         </div>
     </section>
@@ -233,62 +209,40 @@
         <div class="container">
             <div class="why-us-grid">
 
+                <div class="why-us-img why-us-img--tall" style="background-image: url('images/tiguan.webp');"></div>
+
                 <div class="why-us-left">
                     <span class="why-us-tag">Notre Différence</span>
                     <h2 class="why-us-title">Pourquoi Choisir<br><span class="text-accent">FRIKAT AUTO</span> ?</h2>
-                    <p class="why-us-intro">Basé à Grigny, dans la région lyonnaise, FRIKAT AUTO accompagne particuliers et professionnels avec sérieux et transparence dans tous leurs projets automobiles.</p>
-                    <a href="contact.html" class="btn btn-primary" style="margin-top:1rem; align-self:flex-start;">
-                        <i class="fas fa-phone"></i> Nous contacter
-                    </a>
                 </div>
-
-                <div class="why-us-img why-us-img--tall" style="background-image: url('images/tiguan.webp');"></div>
-
-                <div class="why-us-img" style="background-image: url('images/3008.webp');"></div>
 
                 <div class="why-us-right">
 
                     <div class="why-item">
-                        <div class="why-number">01</div>
                         <div class="why-content">
                             <div class="why-icon-box"><i class="fas fa-shield-alt"></i></div>
-                            <div>
-                                <h4>Transparence Totale</h4>
-                                <p>Tous nos véhicules sont vérifiés. Pas de mauvaises surprises.</p>
-                            </div>
+                            <h4>Transparence Totale</h4>
                         </div>
                     </div>
 
                     <div class="why-item">
-                        <div class="why-number">02</div>
                         <div class="why-content">
                             <div class="why-icon-box"><i class="fas fa-handshake"></i></div>
-                            <div>
-                                <h4>Accompagnement Personnalisé</h4>
-                                <p>De la recherche à la livraison, nous vous guidons à chaque étape.</p>
-                            </div>
+                            <h4>Accompagnement Personnalisé</h4>
                         </div>
                     </div>
 
                     <div class="why-item">
-                        <div class="why-number">03</div>
                         <div class="why-content">
                             <div class="why-icon-box"><i class="fas fa-globe-africa"></i></div>
-                            <div>
-                                <h4>Expert Export Algérie</h4>
-                                <p>Formalités douanières maîtrisées.</p>
-                            </div>
+                            <h4>Expert Export Algérie</h4>
                         </div>
                     </div>
 
                     <div class="why-item">
-                        <div class="why-number">04</div>
                         <div class="why-content">
                             <div class="why-icon-box"><i class="fas fa-tag"></i></div>
-                            <div>
-                                <h4>Prix Justes &amp; Compétitifs</h4>
-                                <p>Estimation gratuite. Reprise et vente au meilleur prix du marché.</p>
-                            </div>
+                            <h4>Prix Justes &amp; Compétitifs</h4>
                         </div>
                     </div>
 
@@ -383,65 +337,43 @@
         </div>
     </section>
 
-    <!-- Map -->
-    <section class="map-section section section-gray">
+    <!-- Nous trouver -->
+    <section class="find-us-section section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Nous Trouver</h2>
-            </div>
-            <div class="map-container">
+            <div class="find-us-split">
                 <iframe
-                    src="https://maps.google.com/maps?q=Grigny,+69520,+France&output=embed&hl=fr"
-                    width="100%"
-                    height="420"
+                    class="find-us-map"
+                    src="https://maps.google.com/maps?q=33+Avenue+Champlevert,+69520+Grigny&output=embed&hl=fr"
                     style="border:0;"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
-                <div class="map-info">
-                    <div class="map-info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <strong>Adresse</strong>
-                            <p>69520 Grigny<br>France</p>
-                        </div>
+                <div class="find-us-card">
+                    <span class="why-us-tag">Nous rendre visite</span>
+                    <h2 class="find-us-title">Venez nous voir<br>à Grigny</h2>
+                    <ul class="find-us-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>33 Avenue Champlevert<br>69520 Grigny</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lundi – Samedi, 9h00 à 19h00</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span><a href="tel:+33774480625">07 70 04 88 06</a></span>
+                        </li>
+                    </ul>
+                    <div class="find-us-actions">
+                        <a href="https://wa.me/33774480625" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-white">
+                            <i class="fas fa-envelope"></i> Formulaire
+                        </a>
                     </div>
-                    <div class="map-info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <strong>Horaires</strong>
-                            <p>Lundi – Samedi<br>9h00 à 19h00</p>
-                        </div>
-                    </div>
-                    <div class="map-info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>Téléphone</strong>
-                            <p><a href="tel:+33774480625">07 70 04 88 06</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Final -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Prêt à Trouver Votre Véhicule ?</h2>
-                <p>Contactez FRIKAT AUTO dès maintenant — réponse rapide sur WhatsApp</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/33774480625" class="btn btn-whatsapp" target="_blank" rel="noopener">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                    <a href="tel:+33774480625" class="btn btn-phone">
-                        <i class="fas fa-phone"></i> 07 70 04 88 06
-                    </a>
-                    <a href="contact.html" class="btn btn-outline-white">
-                        <i class="fas fa-envelope"></i> Formulaire
-                    </a>
                 </div>
             </div>
         </div>
@@ -469,7 +401,6 @@
                         <li><a href="vehicules-neufs.html">Véhicules Neufs</a></li>
                         <li><a href="vehicules-occasions.html">Occasions</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">À Propos</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -499,7 +430,7 @@
                         </li>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>69520 Grigny<br>France</span>
+                            <span>33 Avenue Champlevert<br>69520 Grigny</span>
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>

@@ -29,3 +29,7 @@ Thumbs.db
 # dist/
 # build/
 nul
+
+# Local Netlify folder
+.netlify
+deno.lock
