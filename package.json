@@ -1,0 +1,14 @@
+{
+  "name": "frikat-auto",
+  "version": "1.0.0",
+  "description": "Site web FRIKAT AUTO — Achat, Vente, Reprise, Dépôt-Vente, Export Algérie",
+  "scripts": {
+    "build": "node scripts/copy-vehicles.js",
+    "sync": "node scripts/sync-vehicles.js",
+    "webp": "node scripts/convert-to-webp.js"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "sharp": "^0.33.5"
+  }
+}

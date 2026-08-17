@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="description" content="Contactez FRIKAT AUTO — Grigny, 69520 France. Tél : 07 70 04 88 06. Lundi–Samedi 9h–19h.">
+    <title>Contact | FRIKAT AUTO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="FRIKAT AUTO Logo">
+                    </a>
+                    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li><a href="vehicules-neufs.html" class="nav-link">Véhicules Neufs</a></li>
+                        <li><a href="vehicules-occasions.html" class="nav-link">Véhicules d'Occasion</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="about.html" class="nav-link">À Propos</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <a href="https://wa.me/33774480625" class="btn btn-call" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header" style="background-image: url('images/contact.webp');">
+        <div class="page-header-overlay"></div>
+        <div class="container" style="position:relative;z-index:1;">
+            <h1 class="page-title">Contact</h1>
+            <p class="page-subtitle">Nous sommes disponibles du lundi au samedi, de 9h à 13h</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Infos -->
+                <div class="contact-info">
+                    <h2 style="font-size:1.6rem; font-weight:700; color:var(--text-white); margin-bottom:0.5rem;">
+                        Nous trouver &amp; nous contacter
+                    </h2>
+                    <p style="color:var(--text-light); margin-bottom:1.5rem; line-height:1.7;">
+                        N'hésitez pas à nous contacter par téléphone, WhatsApp ou via le formulaire ci-contre.
+                        Nous répondons rapidement à toutes vos demandes.
+                    </p>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Adresse du garage</h4>
+                            <p>69520 Grigny<br>France</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p><a href="tel:+33774480625">07 70 04 88 06</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/33774480625" target="_blank" rel="noopener">Écrire sur WhatsApp</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Horaires d'ouverture</h4>
+                            <p>
+                                Lundi – Samedi : 9h00 – 19h00<br>
+                                <span style="color:var(--text-muted); font-size:0.82rem;">Dimanche : fermé</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Carte -->
+                    <div style="border-radius:12px; overflow:hidden; border:1px solid var(--border-accent); margin-top:0.5rem;">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Grigny,+69520,+France&output=embed&hl=fr"
+                            width="100%"
+                            height="260"
+                            style="border:0; display:block;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Formulaire -->
+                <div class="contact-form-wrapper">
+                    <h3>Envoyer un message</h3>
+                    <form id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/confirmation.html">
+                        <input type="hidden" name="bot-field">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="06 XX XX XX XX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="votre@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="" disabled selected>Choisir un sujet</option>
+                                <option value="achat">Achat de véhicule</option>
+                                <option value="vente">Vente / Reprise</option>
+                                <option value="depot">Dépôt-Vente</option>
+                                <option value="export">Export Algérie</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Décrivez votre projet..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+
+                    <div style="margin-top:1.5rem; padding:1rem; background:var(--accent-light); border:1px solid var(--accent-border); border-radius:8px; text-align:center;">
+                        <p style="font-size:0.85rem; color:var(--text-light); margin-bottom:0.5rem;">Préférez une réponse immédiate ?</p>
+                        <a href="https://wa.me/33774480625" class="btn btn-whatsapp" target="_blank" rel="noopener" style="width:100%; justify-content:center;">
+                            <i class="fab fa-whatsapp"></i> Écrire directement sur WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="images/logo.png" alt="FRIKAT AUTO" class="footer-logo">
+                    <p class="footer-description">Spécialiste automobile à Grigny. Achat, vente, reprise, dépôt-vente, export.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/33774480625" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="vehicules-neufs.html">Véhicules Neufs</a></li>
+                        <li><a href="vehicules-occasions.html">Occasions</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Nos Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Achat</a></li>
+                        <li><a href="services.html">Vente</a></li>
+                        <li><a href="services.html">Reprise</a></li>
+                        <li><a href="services.html">Dépôt-Vente</a></li>
+                        <li><a href="services.html">Export Algérie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i><a href="tel:+33774480625">07 70 04 88 06</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Grigny, 69520 France</span></li>
+                        <li><i class="fas fa-clock"></i><span>Lun–Sam : 9h – 19h</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FRIKAT AUTO — RCS Bobigny 939 041 141. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="mentions-legales.html">Mentions Légales</a>
+                    <a href="politique-confidentialite.html">Confidentialité</a>
+                    <a href="cgv.html">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/33774480625" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button class="scroll-top" id="scrollTop" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+    <script src="js/main.js"></script>
+</body>
+</html>

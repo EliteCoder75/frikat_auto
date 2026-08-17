@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="description" content="Véhicules d'occasion FRIKAT AUTO — Moins de 3 ans pour l'export et occasions classiques pour la France. Grigny.">
+    <title>Véhicules d'Occasion | FRIKAT AUTO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vehicules.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="FRIKAT AUTO Logo">
+                    </a>
+                    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li><a href="vehicules-neufs.html" class="nav-link">Véhicules Neufs</a></li>
+                        <li><a href="vehicules-occasions.html" class="nav-link active">Occasions</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="about.html" class="nav-link">À Propos</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <a href="https://wa.me/33774480625" class="btn btn-call" target="_blank" rel="noopener">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('images/photo_de_couverture.webp');">
+        <div class="page-header-overlay"></div>
+        <div class="container" style="position:relative;z-index:1;">
+            <h1 class="page-title">Véhicules d'Occasion</h1>
+            <p class="page-subtitle">Export Algérie — Véhicules -3 ans</p>
+        </div>
+    </section>
+
+    <!-- Filtres -->
+    <div class="filters-section">
+        <div class="container">
+            <div class="filters-header">
+                <h2><i class="fas fa-filter"></i> Filtrer les véhicules</h2>
+                <button id="resetFilters" class="btn-reset">
+                    <i class="fas fa-redo"></i> Réinitialiser
+                </button>
+            </div>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="filterBrand"><i class="fas fa-car"></i> Marque</label>
+                    <input type="text" id="filterBrand" class="filter-input" placeholder="Ex : Renault">
+                </div>
+                <div class="filter-group">
+                    <label for="filterMaxKm"><i class="fas fa-tachometer-alt"></i> Km max</label>
+                    <input type="number" id="filterMaxKm" class="filter-input" placeholder="Ex : 100 000" min="0" step="5000">
+                </div>
+                <div class="filter-group">
+                    <label for="filterMinPrice"><i class="fas fa-euro-sign"></i> Prix min</label>
+                    <input type="number" id="filterMinPrice" class="filter-input" placeholder="0 €" min="0" step="500">
+                </div>
+                <div class="filter-group">
+                    <label for="filterMaxPrice"><i class="fas fa-euro-sign"></i> Prix max</label>
+                    <input type="number" id="filterMaxPrice" class="filter-input" placeholder="40 000 €" min="0" step="500">
+                </div>
+                <div class="filter-group">
+                    <label for="filterFuel"><i class="fas fa-gas-pump"></i> Carburant</label>
+                    <select id="filterFuel" class="filter-input">
+                        <option value="">Tous</option>
+                        <option value="Essence">Essence</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Électrique">Électrique</option>
+                        <option value="Hybride">Hybride</option>
+                    </select>
+                </div>
+            </div>
+            <div class="results-count" id="resultsCount" style="margin-top:1rem;"></div>
+        </div>
+    </div>
+
+    <!-- Catalogue -->
+    <section class="vehicles-section">
+        <div class="container">
+
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.5rem; padding:1rem 1.25rem; background:var(--accent-light); border:1px solid var(--accent-border); border-radius:10px;">
+                <i class="fas fa-info-circle" style="color:var(--accent-color);font-size:1.1rem;"></i>
+                <p style="font-size:0.88rem; color:var(--text-light); margin:0;">
+                    Véhicules de moins de 3 ans, éligibles à l'export vers l'<strong style="color:var(--text-white);">Algérie</strong>. Formalités douanières prises en charge.
+                </p>
+            </div>
+            <div class="catalogue-grid" id="vehiclesGridExport">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Chargement...</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Vous avez un véhicule à vendre ?</h2>
+                <p>Achat au comptant, reprise ou dépôt-vente — obtenez une estimation gratuite.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/33774480625" class="btn btn-whatsapp" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="tel:+33774480625" class="btn btn-phone">
+                        <i class="fas fa-phone"></i> 07 70 04 88 06
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="images/logo.png" alt="FRIKAT AUTO" class="footer-logo">
+                    <p class="footer-description">Spécialiste automobile à Grigny. Achat, vente, reprise, dépôt-vente, export.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/33774480625" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="vehicules-neufs.html">Véhicules Neufs</a></li>
+                        <li><a href="vehicules-occasions.html">Occasions</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Nos Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Achat</a></li>
+                        <li><a href="services.html">Vente</a></li>
+                        <li><a href="services.html">Reprise</a></li>
+                        <li><a href="services.html">Dépôt-Vente</a></li>
+                        <li><a href="services.html">Export Algérie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i><a href="tel:+33774480625">07 70 04 88 06</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Grigny, 69520 France</span></li>
+                        <li><i class="fas fa-clock"></i><span>Lun–Sam : 9h – 19h</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FRIKAT AUTO — RCS Bobigny 939 041 141. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="mentions-legales.html">Mentions Légales</a>
+                    <a href="politique-confidentialite.html">Confidentialité</a>
+                    <a href="cgv.html">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/33774480625" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <button class="scroll-top" id="scrollTop" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/vehicles-api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
