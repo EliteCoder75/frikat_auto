@@ -94,7 +94,17 @@ async function initFeaturedVehicles() {
     if (!grid) return;
 
     try {
-        const vehicles = await getFeaturedVehicles(6);
+        const isMobile = window.innerWidth <= 768;
+        let vehicles;
+        if (isMobile) {
+            const all = await getAllVehicles(null);
+            const available = all.filter(v => v.disponibilite !== 'vendu');
+            const neuf = available.find(v => v.categorie === 'neuf');
+            const occasion = available.find(v => v.categorie === 'export');
+            vehicles = [neuf, occasion].filter(Boolean);
+        } else {
+            vehicles = await getFeaturedVehicles(6);
+        }
         if (!vehicles || vehicles.length === 0) {
             grid.style.display = 'none';
             if (noMsg) noMsg.style.display = 'block';
