@@ -12,7 +12,7 @@ fuel: Essence
 exterior_color: NOIR
 interior_color: NOIR
 price: "13000"
-disponibilite: vendu
+disponibilite: commande
 image: images/citroen-c3-air-cross.webp
 gallery:
   - images/img_4462.webp
