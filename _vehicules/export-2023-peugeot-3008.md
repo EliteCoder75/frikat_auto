@@ -14,9 +14,9 @@ exterior_color: gris argent
 interior_color: noir
 price: "14000"
 disponibilite: stock
-image: images/3d30d5d3392b5acef31f8639f6dff887.jpg
+image: images/3d30d5d3392b5acef31f8639f6dff887.webp
 gallery:
-  - images/5a382e140c2623949270132a0407a57e69521440.jpg
+  - images/5a382e140c2623949270132a0407a57e69521440.webp
 desc: |-
   climatisaion bizone
   gante alliages
