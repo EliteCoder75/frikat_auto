@@ -12,7 +12,7 @@ fuel: Essence
 exterior_color: GRIS
 interior_color: NOIR
 price: "12800"
-disponibilite: stock
+disponibilite: vendu
 image: images/308-2023.webp
 gallery:
   - images/img_4562-1-.webp
@@ -23,4 +23,7 @@ gallery:
   - images/img_4567-1-.webp
   - images/img_4570-1-.webp
   - images/img_4571-1-.webp
+desc: |-
+  climatision bizone
+  gante alliages
 ---
