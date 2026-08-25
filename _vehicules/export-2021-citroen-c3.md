@@ -7,7 +7,7 @@ finition: STYLE
 year: 2024
 kilometrage: "12000"
 transmission: Automatique
-motor: "1.TSI 110 "
+motor: 1.0 TSI 110 CH
 fuel: Essence
 exterior_color: GRIS
 interior_color: NOIR
