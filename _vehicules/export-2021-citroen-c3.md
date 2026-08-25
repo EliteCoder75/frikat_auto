@@ -1,24 +1,30 @@
 ---
 categorie: export
-id: VO-104
-brand: "CITROEN "
-model: C3
-finition: AIRCROSS
+id: VO-O1
+brand: SEAT
+model: ARONA
+finition: STYLE
 year: 2024
-kilometrage: "36000"
-transmission: Manuelle
-motor: "1.2 PURETECK 130 CH "
+kilometrage: "12000"
+transmission: Automatique
+motor: "1.TSI 110 "
 fuel: Essence
-exterior_color: NOIR
+exterior_color: GRIS
 interior_color: NOIR
-price: "13000"
-disponibilite: commande
-image: images/citroen-c3-air-cross.webp
+price: "15500"
+disponibilite: stock
+image: images/2318.jpg
 gallery:
-  - images/img_4462.webp
-  - images/img_4463.webp
-  - images/img_4466.webp
-  - images/img_4468.webp
-  - images/img_4469.webp
-  - images/img_4471.webp
+  - images/2317.jpg
+  - images/2321.jpg
+  - images/1000001733.jpg
+  - images/1000001731.jpg
+  - images/1000001732.jpg
+desc: |-
+  SEAT ARONA FINITION STYLE 
+  ANNEE : 2024
+  KILOMETRAGE : 12000 KM
+  CABURANT : ESSENCE
+  BOITE : AUTOMATIQUE 
+   VEHICULE EN EXCELLENTE ETAT
 ---
