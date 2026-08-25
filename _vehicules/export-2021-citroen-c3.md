@@ -13,13 +13,13 @@ exterior_color: GRIS
 interior_color: NOIR
 price: "15500"
 disponibilite: stock
-image: images/2318.jpg
+image: images/2318.webp
 gallery:
-  - images/2317.jpg
-  - images/2321.jpg
-  - images/1000001733.jpg
-  - images/1000001731.jpg
-  - images/1000001732.jpg
+  - images/2317.webp
+  - images/2321.webp
+  - images/1000001733.webp
+  - images/1000001731.webp
+  - images/1000001732.webp
 desc: |-
   SEAT ARONA FINITION STYLE 
   ANNEE : 2024
