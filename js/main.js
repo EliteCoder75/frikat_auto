@@ -223,8 +223,8 @@ function buildCatalogueCard(v) {
     if (v.categorie === 'export') { badgeClass = 'export'; badgeLabel = 'Export'; }
     else if (v.categorie === 'france') { badgeClass = 'france'; badgeLabel = 'France'; }
 
-    const dispoClass = isVendu ? 'vendu' : (v.disponibilite === 'commande' ? 'commande' : 'stock');
-    const dispoLabel = isVendu ? 'Vendu' : (v.disponibilite === 'commande' ? 'Sur commande' : 'En stock');
+    const dispoMap = { commande: ['commande', 'Sur commande'], arrivage: ['arrivage', 'En arrivage'] };
+    const [dispoClass, dispoLabel] = isVendu ? ['vendu', 'Vendu'] : (dispoMap[v.disponibilite] || ['stock', 'En stock']);
 
     const soldOverlay = isVendu
         ? `<div class="vc-sold-overlay"><span>Vendu</span></div>`
@@ -413,8 +413,8 @@ async function initVehicleDetailPage() {
         if (vehicle.categorie === 'export') { badgeClass = 'export'; badgeLabel = 'Export Algérie'; }
         else if (vehicle.categorie === 'france') { badgeClass = 'france'; badgeLabel = 'Occasion France'; }
 
-        const dispoClass = vehicle.disponibilite === 'vendu' ? 'vendu' : (vehicle.disponibilite === 'commande' ? 'commande' : 'stock');
-        const dispoLabel = vehicle.disponibilite === 'vendu' ? 'Vendu' : (vehicle.disponibilite === 'commande' ? 'Sur commande' : 'En stock');
+        const dispoMap = { commande: ['commande', 'Sur commande'], arrivage: ['arrivage', 'En arrivage'] };
+        const [dispoClass, dispoLabel] = isVendu ? ['vendu', 'Vendu'] : (dispoMap[vehicle.disponibilite] || ['stock', 'En stock']);
 
         const kmRow = vehicle.kilometrage
             ? `<div class="vd-spec-item"><label>Kilométrage</label><span>${Number(vehicle.kilometrage).toLocaleString('fr-FR')} km</span></div>`
@@ -437,7 +437,7 @@ async function initVehicleDetailPage() {
                 <i class="fab fa-whatsapp"></i> Demander par WhatsApp
             </a>
             <a href="tel:+33774480625" class="btn btn-phone">
-                <i class="fas fa-phone"></i> 07 70 04 88 06
+                <i class="fas fa-phone"></i> 07 74 48 06 25
             </a>
         </div>`;
 

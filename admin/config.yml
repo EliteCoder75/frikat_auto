@@ -32,6 +32,9 @@ collections:
       - label: "Sur commande"
         field: disponibilite
         pattern: "commande"
+      - label: "En arrivage"
+        field: disponibilite
+        pattern: "arrivage"
       - label: "Vendu"
         field: disponibilite
         pattern: "vendu"
@@ -82,6 +85,7 @@ collections:
         options:
           - {label: "En stock", value: "stock"}
           - {label: "Sur commande", value: "commande"}
+          - {label: "En arrivage", value: "arrivage"}
           - {label: "Vendu", value: "vendu"}
       - {label: "Image principale", name: "image", widget: "image"}
       - label: "Galerie (max 20 photos)"
