@@ -1,17 +1,17 @@
 ---
 categorie: export
-id: VO-02
+id: VO-10
 brand: "Volkswagen "
 model: Golf
 finition: "Style "
 year: 2024
-kilometrage: "52000"
+kilometrage: "32000"
 transmission: Manuelle
 motor: 1.5 TSI 130 CH
 fuel: Essence
 exterior_color: "Noir "
 interior_color: NOIR
-price: "17500"
+price: "17300"
 disponibilite: stock
 image: images/9845.webp
 gallery:
