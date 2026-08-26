@@ -13,15 +13,15 @@ exterior_color: BLANC
 interior_color: NOIR
 price: "16990"
 disponibilite: stock
-image: images/bb889b9b-9d09-4555-af2f-f94d83041796.jpg
+image: images/bb889b9b-9d09-4555-af2f-f94d83041796.webp
 gallery:
-  - images/a87e477a-036f-4ae0-90a0-0f05754e45c0.jpg
-  - images/4c5552a7-d17a-4392-a0b7-2152cfe3c5b5.jpg
-  - images/548145db-3c81-4c73-8ce7-9399245ce869.jpg
-  - images/bad94db6-43bd-4764-9c58-1dae0b595f7a.jpg
-  - images/3283c3fa-43f8-4b2f-8093-da5491430104.jpg
-  - images/79fe0326-a791-40c7-8b8a-3df6051a92ad.jpg
-  - images/a43f01de-b469-4d83-97a4-af710c98aa7e.jpg
+  - images/a87e477a-036f-4ae0-90a0-0f05754e45c0.webp
+  - images/4c5552a7-d17a-4392-a0b7-2152cfe3c5b5.webp
+  - images/548145db-3c81-4c73-8ce7-9399245ce869.webp
+  - images/bad94db6-43bd-4764-9c58-1dae0b595f7a.webp
+  - images/3283c3fa-43f8-4b2f-8093-da5491430104.webp
+  - images/79fe0326-a791-40c7-8b8a-3df6051a92ad.webp
+  - images/a43f01de-b469-4d83-97a4-af710c98aa7e.webp
 desc: |-
   Aide au stationnement
   Capteurs arrière
