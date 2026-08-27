@@ -12,11 +12,11 @@ exterior_color: "Blanc "
 interior_color: Noir
 price: "17900"
 disponibilite: stock
-image: images/7521.jpg
+image: images/7521.webp
 gallery:
-  - images/7524.jpg
-  - images/7527.jpg
-  - images/7530.jpg
-  - images/7539.jpg
-  - images/7533.jpg
+  - images/7524.webp
+  - images/7527.webp
+  - images/7530.webp
+  - images/7539.webp
+  - images/7533.webp
 ---
