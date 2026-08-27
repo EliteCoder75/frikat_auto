@@ -170,7 +170,11 @@ body:not(.page-index) .logo-text { opacity: 1; visibility: visible; }
     z-index: 2;
 }
 @media (max-width: 768px) {
-    .hero { background-image: url('../images/photo_de_couverture_mobile.webp'); }
+    .hero {
+        background-image: url('../images/photo_de_couverture_mobile.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .hero-wa-btn { display: none; }
 }
 .hero-content { position: relative; z-index: 3; width: 100%; padding: 120px 0 80px; }
@@ -775,7 +779,7 @@ textarea.form-control { min-height: 140px; resize: vertical; }
 
     /* Reduction generale des elements trop grands sur mobile */
     .section { padding: 2.5rem 0; }
-    .hero { padding: 16rem 0 2.5rem; }
+    .hero { padding: 21rem 0 2.5rem; }
     .hero-headline { font-size: 1.3rem; }
     .hero-eyebrow-brand { font-size: 1.05rem; }
     .hero-headline-big { font-size: 2rem; }
