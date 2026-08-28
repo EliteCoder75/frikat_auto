@@ -5,7 +5,7 @@ brand: "Volkswagen "
 model: Golf
 finition: "Style "
 year: 2024
-kilometrage: "32000"
+kilometrage: "52000"
 transmission: Manuelle
 motor: 1.5 TSI 130 CH
 fuel: Essence
