@@ -11,7 +11,7 @@ motor: "1.5 DCI 90 CH "
 fuel: Diesel
 exterior_color: "GRIS NARDO "
 interior_color: NOIR
-price: "15900"
+price: "15400"
 disponibilite: stock
 image: images/clio-5-gris-nardo-2024.webp
 desc: ""
