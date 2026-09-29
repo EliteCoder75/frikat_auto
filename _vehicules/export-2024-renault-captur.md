@@ -12,7 +12,7 @@ fuel: Essence
 exterior_color: "BLEU GOLOISE "
 interior_color: "Noir "
 price: "13490"
-disponibilite: stock
+disponibilite: arrivage
 image: images/11013.webp
 gallery:
   - images/11014.webp
