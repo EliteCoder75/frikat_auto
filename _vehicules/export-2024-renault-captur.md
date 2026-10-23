@@ -11,12 +11,12 @@ motor: 1.0 TCE 90
 fuel: Essence
 exterior_color: "BLEU GOLOISE "
 interior_color: "Noir "
-price: "13490"
-disponibilite: arrivage
+price: "13000"
+disponibilite: vendu
 image: images/11013.webp
 gallery:
   - images/11014.webp
   - images/11015.webp
-  - images/11016.webp
   - images/11018.webp
+  - images/11016.webp
 ---
