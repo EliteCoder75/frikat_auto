@@ -10,12 +10,12 @@ motor: 1.5 TSI 150
 fuel: Essence
 price: "21900"
 disponibilite: stock
-image: images/31752.jpg
+image: images/31752.webp
 gallery:
-  - images/31752.jpg
-  - images/31752.jpg
-  - images/31714.jpg
-  - images/31727.jpg
+  - images/31752.webp
+  - images/31752.webp
+  - images/31714.webp
+  - images/31727.webp
 desc: |-
   Cupra formentor full black  état proche du neuf 
   1.5 TSI 150 CHEVAUX  FAIBLE KILOMÉTRAGE UNIQUEMENT 21000 KM
